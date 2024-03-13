@@ -19,13 +19,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Mi Perfil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="admin-articulos.html">Administrar Articulos</a>
+                <a class="nav-link active" href="admin-articulos.html">Administrar Articulos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="estadisticas.html">Estadisticas</a>
@@ -48,71 +48,36 @@
     </header>
 
     <main>
-      <div class="jumbotron-home">
-        <h1>Bienvenidos al blog de Tecnologia</h1>
-        <p>Descubre las últimas tendencias y noticias en el mundo de la tecnología</p>
-      </div>
-
-
-      <!-- secciones informativas -->
       <div class="container mt-5">
-        <div class="row">
-          <div class="col-lg-8">
-            <h2 class="mb-3">Ultimos Articulos</h2>
-            <div class="row rows-cols-1 row-cols-md-2 g-4">
-              <div class="col">
-                <div class="card">
-                  <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="">
+        <h2 class="mb-5">Administrar Articulos</h2>
 
-                  <div class="card-body">
-                    <h5 class="card-title">Titulo del Articulo</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad dolores harum quia quod, facere vero perspiciatis! Facere debitis iusto cupiditate optio maiores nobis laboriosam natus exercitationem. Quibusdam illo minima voluptatibus.</p>
-                    <a href="#" class="btn btn-secondary  btn-sm">Leer más..</a>
-                  </div>
-                </div>
-                
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img src="https://picsum.photos/400/300?random=2" class="card-img-top" alt="">
+        <div>
+          <h5>Añadir nuevo articulos</h5>
 
-                  <div class="card-body">
-                    <h5 class="card-title">Titulo del Articulo</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad dolores harum quia quod, facere vero perspiciatis! Facere debitis iusto cupiditate optio maiores nobis laboriosam natus exercitationem. Quibusdam illo minima voluptatibus.</p>
-                    <a href="#" class="btn btn-secondary  btn-sm">Leer más..</a>
-                  </div>
-                </div>
-                
-              </div>
+          <form>
+            <div class="mb-3">
+              <label for="tituloArticulo" class="form-label">Titulo de Articulo</label>
+              <input type="email" class="form-control" id="tituloArticulo">
             </div>
-          </div>
 
-          <div class="col-lg-4">
-            <h2 class="mb-4">Noticias</h2>
-            <blockquote>
-              <p>"Innovaciones en la Inteligencia Articial: Nuevos Algoritmos prometen revolucionar el aprendizaje automatico"</p>
-              <div class="blockquote-buttons">
-                <a href="#" class="btn btn-outline-primary btn-sm">Leer más</a>
-              </div>
-            </blockquote>
-            <blockquote>
-              <p>"Innovaciones en la Inteligencia Articial: Nuevos Algoritmos prometen revolucionar el aprendizaje automatico"</p>
-              <div class="blockquote-buttons">
-                <a href="#" class="btn btn-outline-primary btn-sm">Leer más</a>
-              </div>
-            </blockquote>
-            <blockquote>
-              <p>"Innovaciones en la Inteligencia Articial: Nuevos Algoritmos prometen revolucionar el aprendizaje automatico"</p>
-              <div class="blockquote-buttons">
-                <a href="#" class="btn btn-outline-primary btn-sm">Leer más</a>
-              </div>
-            </blockquote>
-          </div>
+            <div class="mb-3">
+              <label for="contenidoArticulo" class="form-label">Contenido</label>
+              <textarea class="form-control" id="contenidoArticulo"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar Articulo</button>
+          </form>
         </div>
+
+        <div class="mt-5">
+          <h5>Lista de articulo</h5>
+
+          <p>Articulo: 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur, voluptatum ab veritatis omnis, optio, architecto sapiente consequatur aut debitis tempore hic. Repudiandae odit magni illo illum quibusdam molestias sunt.</p>
+          <button class="btn btn-outline-secondary">Editar</button>
+
+        </div>
+
       </div>
-
-
- 
     </main>
 
     <footer>
